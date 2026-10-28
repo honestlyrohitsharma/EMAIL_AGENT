@@ -24,8 +24,6 @@ SCOPES = [
     'https://www.googleapis.com/auth/gmail.modify'
 ]
 CREDENTIALS_FILE = 'credentials.json'
-
-# Configure the Gemini API Key
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 if not GEMINI_API_KEY:
     raise ValueError("No Gemini API key found. Please set the GEMINI_API_KEY environment variable.")
